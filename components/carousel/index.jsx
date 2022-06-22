@@ -13,7 +13,7 @@ export default function carousel(props) {
             height="300"
             role="img"
           />
-          <Carousel.Caption className="">
+          <Carousel.Caption>
             <a href={n.url}>{n.titulo}</a>
           </Carousel.Caption>
         </Carousel.Item>
