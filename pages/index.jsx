@@ -19,11 +19,7 @@ export default function Home(props) {
       <Carousel news={props.lastNews} />
 
       <Category id="ultima" title="Última Hora" news={props.lastNews} />
-<<<<<<< Updated upstream
       <Category id="politics" title="Política" news={props.politics} />
-=======
-      <Category id="politica" title="Política" news={props.politics} />
->>>>>>> Stashed changes
       <Category id="economia" title="Economia" news={props.economics} />
       <Category id="desporto" title="Desporto" news={props.sports} />
       <Category id="fama" title="Fama" news={props.fame} />

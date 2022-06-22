@@ -5,6 +5,10 @@ import { useRef } from "react";
 
 export default function Nav() {
   const [isOpen, setOpen] = useState(false);
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="nav">
@@ -20,7 +24,6 @@ export default function Nav() {
       {isOpen && (
         <div className="links">
           <div className="cont">
-<<<<<<< Updated upstream
             <Link href="#ultima">
               <a>Última Hora</a>
             </Link>
@@ -48,17 +51,6 @@ export default function Nav() {
             <Link href="#lifestyle" scroll={false}>
               <a>Lifestyle</a>
             </Link>
-=======
-            <a href="#ultima">Última Hora</a>
-            <a href="#politica">Política</a>
-            <a href="#economia">Economia</a>
-            <a href="#desporto">Desporto</a>
-            <a href="#fama">Fama</a>
-            <a href="#pais">País</a>
-            <a href="#mundo">Mundo</a>
-            <a href="#cultura">Cultura</a>
-            <a href="#lifestyle">Lifestyle</a>
->>>>>>> Stashed changes
           </div>
         </div>
       )}
