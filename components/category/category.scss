@@ -1,0 +1,17 @@
+.news {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      width: 100%;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+    }
+  }
+
+  .card {
+    height: 100%;
+  }
+}
