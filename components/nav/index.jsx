@@ -24,19 +24,33 @@ export default function Nav() {
       {isOpen && (
         <div className="links">
           <div className="cont">
-            <a href="#ultima">Última Hora</a>
+            <Link href="#ultima">
+              <a>Última Hora</a>
+            </Link>
             <Link href="#politics" scroll={false}>
               <a>Política</a>
             </Link>
             <Link href="#economia" scroll={false}>
               Economia
             </Link>
-            <a href="#desporto">Desporto</a>
-            <a href="#fama">Fama</a>
-            <a href="#pais">País</a>
-            <a href="#mundo">Mundo</a>
-            <a href="#cultura">Cultura</a>
-            <a href="#lifestyle">Lifestyle</a>
+            <Link href="#desporto" scroll={false}>
+              <a>Desporto</a>
+            </Link>
+            <Link href="#fama" scroll={false}>
+              <a>Fama</a>
+            </Link>
+            <Link href="#pais" scroll={false}>
+              <a> País</a>
+            </Link>
+            <Link href="#mundo" scroll={false}>
+              <a>Mundo</a>
+            </Link>
+            <Link href="#cultura" scroll={false}>
+              <a>Cultura</a>
+            </Link>
+            <Link href="#lifestyle" scroll={false}>
+              <a>Lifestyle</a>
+            </Link>
           </div>
         </div>
       )}

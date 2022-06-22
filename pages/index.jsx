@@ -6,17 +6,19 @@ import Carousel from "components/carousel";
 import { useRef } from "react";
 
 export default function Home(props) {
-  const ref = useRef(null);
   return (
     <div>
       <Head>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+          async
+        />
       </Head>
       <Nav />
 
       <Carousel news={props.lastNews} />
 
-      <Category title="Última Hora" news={props.lastNews} />
+      <Category id="ultima" title="Última Hora" news={props.lastNews} />
       <Category id="politics" title="Política" news={props.politics} />
       <Category id="economia" title="Economia" news={props.economics} />
       <Category id="desporto" title="Desporto" news={props.sports} />

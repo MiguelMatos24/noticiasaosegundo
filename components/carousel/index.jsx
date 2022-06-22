@@ -17,7 +17,7 @@ export default function carousel(props) {
                 }
                 data-bs-interval="1000"
               >
-                <img
+                <image
                   src={n.multimediaPrincipal}
                   className="d-block"
                   width="100%"
