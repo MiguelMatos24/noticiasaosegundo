@@ -18,7 +18,7 @@ export default function Home(props) {
 
       <Category title="Última Hora" news={props.lastNews} />
       <Category id="politics" title="Política" news={props.politics} />
-      <Category title="Economia" news={props.economics} />
+      <Category id="economia" title="Economia" news={props.economics} />
       <Category id="desporto" title="Desporto" news={props.sports} />
       <Category id="fama" title="Fama" news={props.fame} />
       <Category id="pais" title="País" news={props.pais} />

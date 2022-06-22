@@ -25,10 +25,12 @@ export default function Nav() {
         <div className="links">
           <div className="cont">
             <a href="#ultima">Última Hora</a>
-            <Link href="/#politics" scroll={true}>
+            <Link href="#politics" scroll={false}>
               <a>Política</a>
             </Link>
-            <a href="economia">Economia</a>
+            <Link href="#economia" scroll={false}>
+              Economia
+            </Link>
             <a href="#desporto">Desporto</a>
             <a href="#fama">Fama</a>
             <a href="#pais">País</a>

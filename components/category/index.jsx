@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Category(props) {
   return (
-    <div>
+    <div id={props.id}>
       <div className="news album py-4">
         <h2 className="text-center" style={{ marginBottom: 30 }}>
           {props.title}
@@ -10,7 +10,10 @@ export default function Category(props) {
         <div className="container">
           <div className="row g-3 ">
             {props.news.map((n) => (
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div
+                className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"
+                key={n.titulo}
+              >
                 <div className="card shadow-sm">
                   <img
                     className="card-img-top"
