@@ -3,10 +3,17 @@ import Nav from "components/nav";
 import Category from "components/category";
 import Footer from "components/footer";
 import Carousel from "components/carousel";
+import { useRef } from "react";
 
 export default function Home(props) {
   return (
     <div>
+      <Head>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+          async
+        />
+      </Head>
       <Nav />
 
       <Carousel news={props.lastNews} />
