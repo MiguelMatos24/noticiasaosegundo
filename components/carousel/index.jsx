@@ -4,8 +4,8 @@ import Carousel from "react-bootstrap/Carousel";
 export default function carousel(props) {
   return (
     <Carousel>
-      {props.news.map((n) => (
-        <Carousel.Item>
+      {props.news.map((n, index) => (
+        <Carousel.Item key={index}>
           <img
             src={n.multimediaPrincipal}
             className="d-block"
