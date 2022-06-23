@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import Hamburger from "hamburger-react";
 import Link from "next/link";
-import { useRef } from "react";
 
 export default function Nav() {
   const [isOpen, setOpen] = useState(false);
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <nav className="nav">
@@ -24,9 +19,6 @@ export default function Nav() {
       {isOpen && (
         <div className="links">
           <div className="cont">
-            <Link href="#ultima">
-              <a>Última Hora</a>
-            </Link>
             <Link href="#politics" scroll={false}>
               <a>Política</a>
             </Link>

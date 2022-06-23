@@ -10,7 +10,6 @@ export default function Home(props) {
       <Nav />
 
       <Carousel news={props.lastNews} />
-      <Category id="ultima" title="Última Hora" news={props.lastNews} />
       <Category id="politics" title="Política" news={props.politics} />
       <Category id="economia" title="Economia" news={props.economics} />
       <Category id="desporto" title="Desporto" news={props.sports} />

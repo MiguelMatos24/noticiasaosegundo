@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Category(props) {
   return (
@@ -15,12 +16,15 @@ export default function Category(props) {
                 key={n.titulo}
               >
                 <div className="card shadow-sm">
-                  <img
-                    className="card-img-top"
-                    width="100%"
-                    height="225"
-                    src={n.multimediaPrincipal}
-                  ></img>
+                  <Link href={n.url}>
+                    <img
+                      href={n.url}
+                      className="card-img-top"
+                      width="100%"
+                      height="225"
+                      src={n.multimediaPrincipal}
+                    ></img>
+                  </Link>
                   <div className="card-body">
                     <a className="card-text" href={n.url}>
                       {n.titulo}

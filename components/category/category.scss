@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 400px) {
+      height: 80px;
+      font-size: 14px;
+      padding-bottom: 5px;
+    }
     a {
       width: 100%;
       text-decoration: none;
