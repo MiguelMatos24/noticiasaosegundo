@@ -12,7 +12,7 @@ export default function Category(props) {
           <div className="row g-3 ">
             {props.news.map((n) => (
               <div
-                className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"
+                className="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3"
                 key={n.titulo}
               >
                 <div className="card shadow-sm">

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Nav from "components/nav";
 import Category from "components/category";
 import Footer from "components/footer";
