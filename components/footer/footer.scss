@@ -1,7 +1,14 @@
 .footer {
   color: white;
-  background-color: #333;
+  background-color: #061826;
   width: 100%;
-  padding: 10px 10px;
   text-align: center;
+  .logo {
+    margin-top: 10px;
+    width: 50px;
+    height: 40px;
+  }
+  p {
+    margin-top: 5px;
+  }
 }

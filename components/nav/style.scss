@@ -1,8 +1,28 @@
 .nav {
   width: 100vw;
-  position: relative;
-  height: 60px;
+  position: fixed;
+  height: 50px;
   color: white;
+  z-index: 999;
+  background-color: #061826;
+
+  h2 {
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: "Newsreader", serif;
+  }
+  .right {
+    img {
+      position: relative;
+      width: 50px;
+      height: 40px;
+      top: 6px;
+      left: 10px;
+    }
+  }
+
   a {
     color: white;
     padding: 14px 16px;
@@ -11,29 +31,71 @@
     display: block;
   }
 
-  .navbar-header {
-    background-color: #333;
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 25px;
+    height: 20px;
+    top: 15px;
+    left: 20px;
   }
 
-  .links {
-    width: 100%;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1000;
-    top: 60px;
-    .cont {
-      display: block;
-      margin-left: auto;
-      background-color: rgb(178, 174, 174);
-      width: 50%;
-      border-radius: 5px;
-      overflow-y: scroll;
-      height: 300px;
-    }
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: white;
   }
 
-  .links a:hover {
-    background-color: #ddd;
-    color: black;
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: lightgrey;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 30px;
+    width: 50px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #061826;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #072237;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    overflow-y: scroll;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
   }
 }
