@@ -6,36 +6,36 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav className="nav ">
-      <div className="d-flex flex-row navbar-header">
+      <div className="d-flex flex-row">
         <div className="left col-2">
           <Menu>
-            <a className="menu-item" href="/">
+            <Link className="menu-item" href="/">
               Últimas Notícias
-            </a>
-            <a className="menu-item" href="/#politics">
+            </Link>
+            <Link className="menu-item" href="/#politics">
               Política
-            </a>
-            <a className="menu-item" href="/#economy">
+            </Link>
+            <Link className="menu-item" href="/#economy">
               Economia
-            </a>
-            <a className="menu-item" href="/#sports">
+            </Link>
+            <Link className="menu-item" href="/#sports">
               Desporto
-            </a>
-            <a className="menu-item" href="/#fame">
+            </Link>
+            <Link className="menu-item" href="/#fame">
               Fama
-            </a>
-            <a className="menu-item" href="/#country">
+            </Link>
+            <Link className="menu-item" href="/#country">
               País
-            </a>
-            <a className="menu-item" href="/#world">
+            </Link>
+            <Link className="menu-item" href="/#world">
               Mundo
-            </a>
-            <a className="menu-item" href="/#culture">
+            </Link>
+            <Link className="menu-item" href="/#culture">
               Cultura
-            </a>
-            <a className="menu-item" href="/#lifestyle">
+            </Link>
+            <Link className="menu-item" href="/#lifestyle">
               Lifestyle
-            </a>
+            </Link>
             <img
               src="logo.png"
               alt="Notícias ao Segundo"
