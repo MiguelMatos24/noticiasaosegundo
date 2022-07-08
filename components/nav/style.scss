@@ -1,10 +1,12 @@
 .nav {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   height: 50px;
   color: white;
   z-index: 999;
   background-color: #061826;
+  top: 0;
+  left: 0;
 
   h2 {
     text-align: start;
@@ -12,15 +14,6 @@
     margin-left: 12.5px;
     font-size: 25px;
     font-family: "Newsreader", serif;
-  }
-  .right {
-    img {
-      position: relative;
-      width: 50px;
-      height: 40px;
-      top: 6px;
-      left: 10px;
-    }
   }
 
   a {

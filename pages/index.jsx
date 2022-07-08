@@ -47,11 +47,6 @@ export async function getServerSideProps() {
   const lifestyleResponse = await fetch(
     "https://www.publico.pt/api/list/cultura"
   );
-  //api - Observador
-
-  const obserResponse = await fetch(
-    "https://observador.pt/wp-json/obs_api/v4/news/widget"
-  );
 
   const lastNews = await lastNewsResponse.json();
   const sports = await sportsResponse.json();
@@ -62,7 +57,6 @@ export async function getServerSideProps() {
   const mundo = await mundoResponse.json();
   const cultura = await culturaResponse.json();
   const lifestyle = await lifestyleResponse.json();
-  const obs = await obserResponse.json();
 
   const props = {
     sports,
@@ -74,7 +68,6 @@ export async function getServerSideProps() {
     mundo,
     cultura,
     lifestyle,
-    obs,
   };
 
   return {

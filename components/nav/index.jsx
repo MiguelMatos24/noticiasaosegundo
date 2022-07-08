@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { bubble as Menu } from "react-burger-menu";
-import Hamburger from "hamburger-react";
 import Link from "next/link";
 
 export default function Nav() {
   return (
     <nav className="nav ">
-      <div className="d-flex flex-row">
-        <div className="left col-2">
+      <div className="d-flex  flex-row navbar-header">
+        <div className="col-2">
           <Menu>
             <Link className="menu-item" href="/">
               Últimas Notícias
