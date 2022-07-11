@@ -2,30 +2,28 @@ import Nav from "components/nav";
 import Category from "components/category";
 import Footer from "components/footer";
 import Carousel from "components/carousel";
-import { parse } from "fast-xml-parser";
 
 export default function Home(props) {
   return (
-    <div>
+    <div className="home">
       <Nav />
-
-      <Carousel news={props.lastNews} />
-      <Category id="politics" title="Política" news={props.politics} />
-      <Category id="economy" title="Economia" news={props.economics} />
-      <Category id="sports" title="Desporto" news={props.sports} />
-      <Category id="fame" title="Fama" news={props.fame} />
-      <Category id="country" title="País" news={props.pais} />
-      <Category id="world" title="Mundo" news={props.mundo} />
-      <Category id="culture" title="Cultura" news={props.cultura} />
-      <Category id="lifestyle" title="Lifestyle" news={props.lifestyle} />
-
+      <main className="main">
+        <Carousel news={props.lastNews} />
+        <Category id="politics" title="Política" news={props.politics} />
+        <Category id="economy" title="Economia" news={props.economics} />
+        <Category id="sports" title="Desporto" news={props.sports} />
+        <Category id="fame" title="Fama" news={props.fame} />
+        <Category id="country" title="País" news={props.pais} />
+        <Category id="world" title="Mundo" news={props.mundo} />
+        <Category id="culture" title="Cultura" news={props.cultura} />
+        <Category id="lifestyle" title="Lifestyle" news={props.lifestyle} />
+      </main>
       <Footer />
     </div>
   );
 }
 
 export async function getServerSideProps() {
-  //api - Público
   const lastNewsResponse = await fetch(
     "https://www.publico.pt/api/list/ultimas"
   );

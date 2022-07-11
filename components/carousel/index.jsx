@@ -3,14 +3,15 @@ import Carousel from "react-bootstrap/Carousel";
 import Link from "next/link";
 
 export default function carousel(props) {
+  const { news } = props;
   return (
     <Carousel>
-      {props.news.map((n, index) => (
+      {news.map((n, index) => (
         <Carousel.Item key={index}>
           <Link href={n.url}>
             <img
               src={n.multimediaPrincipal}
-              className="d-block"
+              className="d-block carrousel-image"
               width="100%"
               height="300"
               role="img"
