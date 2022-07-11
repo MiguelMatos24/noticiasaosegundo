@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Category(props) {
   return (
-    <div id={props.id}>
+    <div id={props.id} className="container-fluid">
       <div className="news album py-4">
         <h2 className="text-center" style={{ marginBottom: 30 }}>
           {props.title}
