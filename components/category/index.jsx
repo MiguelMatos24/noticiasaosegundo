@@ -2,15 +2,14 @@ import React from "react";
 import Link from "next/link";
 
 export default function Category(props) {
+  const { id, news, title } = props;
   return (
-    <div id={props.id} className="container-fluid">
+    <div id={id} className="container-fluid">
       <div className="news album py-4">
-        <h2 className="text-center" style={{ marginBottom: 30 }}>
-          {props.title}
-        </h2>
+        <h2 className="text-center mb-3">{title}</h2>
         <div className="container">
           <div className="row g-3 ">
-            {props.news.map((n) => (
+            {news.map((n) => (
               <div
                 className="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3"
                 key={n.titulo}

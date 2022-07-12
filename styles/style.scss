@@ -2,10 +2,7 @@
 @import "font-awesome/scss/font-awesome.scss";
 @import "components/nav/style.scss";
 @import "components/carousel/style.scss";
-@import "components/category/category.scss";
-@import "components/footer/footer.scss";
+@import "components/category/style.scss";
+@import "components/footer/style.scss";
+@import "pages/style.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Newsreader:opsz@6..72&display=swap");
-
-html {
-  overflow-x: hidden;
-}
