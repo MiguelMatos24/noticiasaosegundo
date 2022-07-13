@@ -1,5 +1,5 @@
 import React from "react";
-import { bubble as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import Link from "next/link";
 
 export default function Nav(props) {
@@ -39,12 +39,6 @@ export default function Nav(props) {
               <Link className="menu-item" href="/latest-news/fire">
                 Incêndios
               </Link>
-              <img
-                src="/logo.png"
-                alt="Notícias ao Segundo"
-                className="logo"
-                style={{ marginTop: "50px" }}
-              />
             </Menu>
           </div>
           <div>

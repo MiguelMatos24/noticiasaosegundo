@@ -1,15 +1,15 @@
 .news {
-  font-family: "Newsreader", serif;
-
   .group-button {
+    padding: 10px 10px;
     button {
       padding: 5px 5px;
       border-radius: 15px;
       border-color: #2a2a2a;
       background-color: #f9f4ed;
       font-size: 20px;
-      margin-bottom: 20px;
       margin-right: 10px;
+      margin-bottom: 20px;
+      text-decoration: none;
     }
 
     button:hover {
@@ -26,7 +26,6 @@
   .group-news {
     height: 100%;
     border-top: solid 1px #2a2a2a;
-    border-bottom: solid 1px #2a2a2a;
 
     .left {
       display: flex;
@@ -35,6 +34,8 @@
 
       .news-body {
         background-color: #f9f4ed;
+
+        padding: 5px 5px;
       }
       a {
         width: 100%;
