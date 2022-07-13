@@ -5,11 +5,11 @@ export default function NewsList(props) {
   const { id, news, title } = props;
 
   return (
-    <div id={id} className="container-fluid news">
-      <div className="row-fluid">
-        <h2 style={{ marginLeft: "20px" }}>{title}</h2>
+    <div id={id} className="container news">
+      <div className="row">
+        <h2>{title}</h2>
         <div>
-          <div className="d-flex flex-row group-button">
+          <div className=" group-button">
             <div className="col-12">
               <Link href="/">
                 <button>Última Hora</button>
@@ -42,9 +42,9 @@ export default function NewsList(props) {
           </div>
           <div className="row g-4 ">
             {news.map((n) => (
-              <div className="col-sm-6 col-12 col-xl-6" key={n.titulo}>
+              <div className="col-sm-6 col-12 col-xl-6 borders" key={n.titulo}>
                 <div className="group-news py-4">
-                  <div className="row">
+                  <div className="row ">
                     <div className="left col-xl-8">
                       <div className="news-body">
                         <Link href={n.url}>

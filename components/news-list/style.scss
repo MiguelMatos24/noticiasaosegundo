@@ -4,12 +4,12 @@
   .group-button {
     button {
       padding: 5px 5px;
-      margin-left: 10px;
       border-radius: 15px;
       border-color: #2a2a2a;
       background-color: #f9f4ed;
       font-size: 15px;
       margin-bottom: 20px;
+      margin-right: 10px;
     }
 
     button:hover {
@@ -17,13 +17,17 @@
       background-color: #2a2a2a;
     }
   }
+  .borders {
+    border-right: solid 1px black;
+  }
+  .borders:nth-child(even) {
+    border-right: none;
+  }
   .group-news {
     height: 100%;
     border-top: solid 1px #2a2a2a;
     border-bottom: solid 1px #2a2a2a;
-    .row {
-      border-right: solid 1px black;
-    }
+
     .left {
       display: flex;
       justify-content: start;
