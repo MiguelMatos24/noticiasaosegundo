@@ -37,7 +37,7 @@ export default function Nav(props) {
                 Sociedade
               </Link>
               <Link className="menu-item" href="/latest-news/fire">
-                Fogos
+                Incêndios
               </Link>
               <img
                 src="/logo.png"
