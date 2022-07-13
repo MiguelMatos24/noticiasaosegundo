@@ -9,7 +9,7 @@ export default function NewsList(props) {
       <div className="row">
         <h2>{title}</h2>
         <div>
-          <div className=" group-button">
+          <div className=" group-button py-4">
             <div className="col-12">
               <Link href="/">
                 <button>Última Hora</button>
