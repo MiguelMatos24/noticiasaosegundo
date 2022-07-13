@@ -3,99 +3,102 @@
   margin: 0;
   padding: 0;
 }
-
-.nav {
-  min-width: 100vw;
-  position: fixed;
+.nav-container {
   height: 50px;
-  color: white;
-  z-index: 999;
-  background-color: #061826;
 
-  h2 {
-    text-align: start;
-    margin-top: 12.5px;
-    margin-left: 50px;
-    font-size: 25px;
-    font-family: "Newsreader", serif;
-  }
-
-  a {
-    color: white;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-
-  a:hover {
-    color: lightgray;
-  }
-
-  /* Position and sizing of burger button */
-  .bm-burger-button {
+  .nav {
+    min-width: 100vw;
     position: fixed;
-    width: 25px;
-    height: 20px;
-    margin-top: 15px;
-    margin-left: 20px;
-  }
+    height: 50px;
+    color: #2a2a2a;
+    z-index: 999;
+    background-color: #f9f4ed;
 
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: white;
-  }
+    h2 {
+      text-align: start;
+      margin-top: 12.5px;
+      margin-left: 70px;
+      font-size: 25px;
+      font-family: "Newsreader", serif;
+    }
 
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: lightgrey;
-  }
+    a {
+      color: #2a2a2a;
+      padding: 14px 14px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
 
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 30px;
-    width: 30px;
-  }
+    a:hover {
+      color: lightgray;
+    }
 
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
+    /* Position and sizing of burger button */
+    .bm-burger-button {
+      position: fixed;
+      width: 25px;
+      height: 20px;
+      margin-top: 15px;
+      margin-left: 30px;
+    }
 
-  /*
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+      background: #2a2a2a;
+    }
+
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+      background: lightgrey;
+    }
+
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+      height: 30px;
+      width: 30px;
+    }
+
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background: #2a2a2a;
+    }
+
+    /*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-  }
+    .bm-menu-wrap {
+      position: fixed;
+      height: 100%;
+    }
 
-  /* General sidebar styles */
-  .bm-menu {
-    background: #061826;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
+    /* General sidebar styles */
+    .bm-menu {
+      background: #f9f4ed;
+      padding: 2.5em 1.5em 0;
+      font-size: 1.15em;
+    }
 
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #072237;
-  }
+    /* Morph shape necessary with bubble or elastic */
+    .bm-morph-shape {
+      fill: #f9f4ed;
+    }
 
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-  }
+    /* Wrapper for item list */
+    .bm-item-list {
+      color: #b8b7ad;
+      padding: 0.8em;
+    }
 
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-  }
+    /* Individual item */
+    .bm-item {
+      display: inline-block;
+    }
 
-  /* Styling of overlay */
-  .bm-overlay {
-    background: #072237;
+    /* Styling of overlay */
+    .bm-overlay {
+      background: #f9f4ed;
+    }
   }
 }
